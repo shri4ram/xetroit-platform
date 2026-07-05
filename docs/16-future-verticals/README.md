@@ -44,8 +44,8 @@ future product-line ideas, and only that:
   from this folder's speculative content and is not hosted here.
 - Any documentation asserting a committed capability, feature, workflow,
   integration, or implementation — once an idea is committed to the
-  roadmap, its documentation belongs in a properly numbered folder, not
-  here.
+  roadmap, its documentation belongs wherever the approved roadmap and
+  authorization process place it, not here.
 - Any other folder's own subject matter, including `03-business-os/`,
   `04-community-os/`, `05-life-os/`, `06-marketplace/`, `07-payments/`,
   `08-ai/`, `09-mobile/`, `10-devops/`, `11-security/`, `12-ui-ux/`,
