@@ -1,28 +1,80 @@
-# 06 — Marketplace
+# Purpose
 
-**Status:** Foundation Draft
+This document defines the documentation boundaries of `docs/06-marketplace/`
+— exactly what belongs inside this folder, and what does not — before any
+Marketplace documentation is authored.
 
-## Purpose
+# Why This Repository Exists
 
-This folder documents the Marketplace module — the set of features and
-services that enable buying, selling, listing, and exchange functionality
-on the XETROIT Platform.
+`docs/06-marketplace/` exists because the approved Documentation Roadmap
+identifies Marketplace as a folder with a document already registered as
+`Planned` (per the "Numbering Collision — Resolved" section of
+`DOCUMENT-INDEX.md`). Unlike Business OS, Community OS, and Life OS,
+Marketplace is not one of the five domains `XP-0014` §9 anticipates a
+Domain Architecture document for, and it is not a Digital Operating
+System governed by `XP-0030`. Its classification — whether it is a
+Module, a Capability, a Shared Ecosystem Service, or a Core Platform
+responsibility — is not yet determined, per `XP-0027` and the approved
+Documentation Roadmap. This folder is the designated location where that
+classification, and the architecture document that follows from it, will
+be documented once resolved.
 
-## Documents That Belong Here
+# Repository Scope
 
-- Marketplace feature scope and architecture
-- Domain models specific to marketplace features (e.g. listings,
-  transactions, offers, search/discovery)
-- Business rules governing this module's behavior (pricing, fees,
-  fulfillment)
-- Integration points between Marketplace and the core platform, Payments,
-  or other modules
+This folder holds documentation that describes Marketplace, and only
+Marketplace:
 
-Payment processing itself belongs in `07-payments/`, not here.
+- The single primary architecture document for Marketplace, once its
+  classification against `XP-0027` is resolved and the document is
+  authored.
+- Any Feature Specification or Implementation Plan document that the
+  Documentation Dependency Order (`XP-0014` §8) recognizes as subordinate
+  to that document, once each is actually authorized to be written.
+- Internal, non-authoritative planning material for sequencing
+  Marketplace's own future documentation.
 
-## Current Status
+# Out of Scope
 
-**Foundation Draft** — folder structure established, no documents authored
-yet. Planned document: `Marketplace` — currently unnumbered pending
-governance approval (see the "Numbering Collision — Resolved" section of
-`../DOCUMENT-INDEX.md`).
+- Platform-wide vision, purpose, or audience content — owned by
+  `00-company/` and `01-platform/`.
+- Core Platform capability content — owned by `02-core-platform/`.
+- The constitutional meaning of "Module" itself — owned by `modules/`.
+- The constitutional contract every Digital Operating System must
+  satisfy — owned by `digital-operating-systems/`, and not assumed to
+  apply here unless Marketplace's eventual classification places it under
+  a Digital Operating System.
+- Payment processing itself — owned by `07-payments/`.
+- Any other folder's own subject matter, including `03-business-os/`,
+  `04-community-os/`, `05-life-os/`, `08-ai/`, or any other numbered
+  folder — each owns its own documentation exclusively.
+- Any documentation not yet authorized to be written under the Docs-First
+  Rule and the Approval Gate.
+
+# Architectural Dependencies
+
+- `02-core-platform/` — must remain `Approved` as the foundation any
+  eventual Marketplace architecture document builds on.
+- `modules/` (`XP-0027`) — governs the classification decision this
+  folder's primary document depends on.
+- `03-business-os/`, `04-community-os/`, `05-life-os/` — one or more may
+  become a dependency depending on how Marketplace is classified, per the
+  approved Documentation Roadmap; this is not resolved by this document.
+
+# Downstream Documentation
+
+No folder in the approved Documentation Roadmap lists a dependency on
+this one.
+
+# Candidate Documents
+
+- **Marketplace Domain Architecture** — the single primary architecture
+  document for Marketplace; its exact tier (Domain Architecture vs.
+  Module Architecture) depends on the classification against `XP-0027`
+  described above and is not decided by this document.
+
+# Current Status
+
+`docs/06-marketplace/` currently contains no authored Marketplace
+documentation. Its planned architecture document remains unnumbered and
+unassigned, per the "Numbering Collision — Resolved" section of
+`DOCUMENT-INDEX.md`.
