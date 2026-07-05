@@ -6,13 +6,13 @@
 |---|---|
 | **Document ID** | XP-0003 |
 | **Title** | Repository Standards |
-| **Version** | 0.1 |
+| **Version** | 0.2 |
 | **Status** | Draft |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | High |
 | **Audience** | Developers / Architects / AI Agents |
-| **Last Updated** | 2026-07-02 |
+| **Last Updated** | 2026-07-04 |
 | **Related Documents** | XP-0000, XP-0003 (self), XP-0004 |
 
 ---
@@ -91,8 +91,18 @@ fixed, singular, well-known entry points rather than a numbered series.
   sequential order.
 - `99-ai-context/` is reserved specifically for AI-agent-facing
   navigation/context content and stays last by convention.
-- A new top-level folder may only be added by updating this document and
-  the repository structure diagram in `docs/README.md` in the same change.
+- A small number of top-level folders are **unnumbered**, reserved for
+  cross-cutting architecture that applies across every Digital Operating
+  System rather than belonging to any one numbered domain folder:
+  `modules/` (Module Architecture, `XP-0026`–`XP-0029`) and
+  `digital-operating-systems/` (Digital Operating System Architecture,
+  `XP-0030`) are the two current examples. Each holds the constitutional
+  contract a whole category of future documents must follow, not a
+  specific domain's own content, which is why it sits outside the
+  two-digit numbering scheme entirely rather than claiming a number.
+- A new top-level folder — numbered or unnumbered — may only be added by
+  updating this document and the repository structure diagram in
+  `docs/README.md` in the same change.
 - A document lives in the folder matching its primary subject domain,
   regardless of its `XP-NNNN` number — the folder does not need to match
   numeric order.
@@ -139,3 +149,4 @@ None at this time.
 | Version | Date | Author | Summary of Change |
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: file naming convention (with correction of prior uppercase example), folder structure rules, markdown conventions. |
+| 0.2 | 2026-07-04 | Claude Code | Recognized unnumbered top-level folders as an approved category for cross-cutting architecture spanning every Digital Operating System (`modules/`, and newly `digital-operating-systems/` for `XP-0030`), distinct from the two-digit numbered domain folders. No renumbering or reordering of existing numbered folders. |

@@ -62,6 +62,25 @@ definition.
 | XP-0027 | Module Classification Principles | modules/ | Draft | Founder |
 | XP-0028 | Module Composition Principles | modules/ | Draft | Founder |
 | XP-0029 | Module Lifecycle | modules/ | Draft | Founder |
+| XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | Draft | Founder |
+
+> **XP-0030 — Digital Operating System Architecture: First Phase 4
+> Document** (2026-07-04): `XP-0030 — Digital Operating System
+> Architecture` establishes the constitutional contract every Digital
+> Operating System's own Domain Architecture document must follow —
+> responsibilities, non-responsibilities, and relationships to Users, the
+> Core Platform, Shared Ecosystem Services, Infrastructure, and every
+> other Digital Operating System — ahead of any specific Business OS,
+> Community OS, Life OS, or future vertical Domain Architecture document.
+> It does not modify the Platform Constitution, `XP-0014`, the Core
+> Platform Domain Architecture (`XP-0015`–`XP-0025`), or the Module
+> Foundation (`XP-0026`–`XP-0029`), and it designs no specific Digital
+> Operating System. Filed in `digital-operating-systems/` — an unnumbered,
+> cross-cutting top-level folder analogous to `modules/`, since this
+> document spans every Digital Operating System rather than belonging to
+> one numbered domain folder (see `xp-0003-repository-standards.md`).
+> Registered here as `Draft`; `Approved` status is not asserted by this
+> entry.
 
 > **XP-0029 — Module Lifecycle: Fourth Phase 3 Document** (2026-07-04):
 > `XP-0029 — Module Lifecycle` defines how an already-classified,

@@ -190,6 +190,12 @@ docs/
 │                                internally, and how it evolves over time,
 │                                shared across every Digital Operating
 │                                System (XP-0026, XP-0027, XP-0028, XP-0029)
+├── digital-operating-systems/   Digital Operating System Architecture —
+│                                the constitutional contract every Digital
+│                                Operating System's own Domain Architecture
+│                                must follow, cross-cutting across Business
+│                                OS, Community OS, Life OS, and any future
+│                                vertical rather than specific to one (XP-0030)
 ├── 03-business-os/              Business OS module
 ├── 04-community-os/             Community OS module
 ├── 05-life-os/                  Life OS module

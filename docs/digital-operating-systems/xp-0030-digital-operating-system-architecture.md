@@ -21,6 +21,19 @@ any other frozen document.
 
 ## 2. Why This Layer Exists
 
+At the root of this layering is a simple division of ownership: the Core
+Platform owns exactly the capabilities common to every Digital Operating
+System — identity, organization, configuration, accountability, and the
+rest already named in `XP-0015`–`XP-0025` — built once and depended on
+everywhere; a Digital Operating System owns exactly the capabilities
+unique to the one domain it serves, and nothing that is actually common
+to every domain. This separation exists to maximize reuse of the common
+layer while leaving the domain-specific layer free for unlimited
+innovation — a new Digital Operating System can differ from every other
+as much as its domain genuinely requires, without that difference ever
+being paid for twice by rebuilding what the Core Platform already
+provides once.
+
 `XP-0011` and `XP-0012` already establish that many Digital Operating
 Systems are built on one shared platform foundation, and `XP-0014`
 already names Business OS, Community OS, Life OS, and Future Vertical OS
@@ -224,6 +237,12 @@ appears needed by more than one Digital Operating System, it is
 reclassified per `XP-0027`, not duplicated as parallel Modules inside
 each.
 
+Identifying, bounding, and composing Modules is not the same as
+classifying one. A Digital Operating System's Domain Architecture
+document applies `XP-0027`'s classification criteria; it never
+supersedes them — whether a proposed piece of work qualifies as a Module
+at all remains entirely governed by `XP-0027`.
+
 ## 12. Extension Principles
 
 A Digital Operating System extends the platform without modifying
@@ -248,7 +267,7 @@ System quietly building a private substitute.
 Within the boundary Sections 4–5 establish, a Digital Operating System's
 own Domain Architecture document is free to:
 
-- Define its own domain-specific data model, business logic, and
+- Define its own domain-specific information model, business logic, and
   experience, in whatever shape best serves the audience it exists to
   serve.
 - Identify and bound its own Modules, per `XP-0026`, once its own Domain
@@ -274,6 +293,15 @@ These freedoms and constraints apply identically to every Digital
 Operating System's own Domain Architecture document, regardless of the
 specific domain it defines.
 
+Innovation belongs inside the domain boundary Sections 4–5 establish. A
+Digital Operating System is encouraged to innovate freely through its
+own domain-specific experience, workflows, business logic, and Modules —
+that is precisely what the freedoms above exist for. It is never
+expected to innovate by modifying the Core Platform's architecture,
+Shared Ecosystem Services, or this document's own contract; any genuine
+need to do so is an extension request through the platform's formal
+architecture governance process (Section 12), not domain innovation.
+
 ## 14. Differentiation and Coexistence Principles
 
 What makes two Digital Operating Systems different is the domain each
@@ -296,30 +324,33 @@ bespoke exception to the platform — it is evaluated against this one,
 shared contract, exactly as Business OS, Community OS, and Life OS
 already are.
 
-The following are illustrative categories of the kind of future Digital
-Operating System this document is written to accommodate — consistent
-with the illustrative, non-committing list `XP-0011`'s Future Expansion
-Strategy already gives — none a commitment to build, and none designed,
-named, or bounded by this document: Commerce OS, Healthcare OS,
-Education OS, Government OS, Hospitality OS, Manufacturing OS,
-Agriculture OS, and Professional Services OS. Any of these, or any
-other, would be introduced deliberately, through the same documentation
-and approval process every other part of the platform follows — never
-assumed into existence by appearing in this list.
+The kind of future Digital Operating System this document is written to
+accommodate is illustrated by `XP-0011`'s own Future Expansion Strategy —
+this document does not restate that list, add to it, or maintain a
+second one of its own. None of it is a commitment to build, and none is
+designed, named, or bounded by this document. Any future Digital
+Operating System, illustrated there or not, would be introduced
+deliberately, through the same documentation and approval process every
+other part of the platform follows — never assumed into existence by
+appearing in an illustrative list.
 
 ## 15. Future Digital Operating System Domain Architecture Documents
 
 `XP-0014` Section 9 already anticipates a Domain Architecture document
 for each of Business OS, Community OS, Life OS, and Future Vertical OS
-(the last as a shared pattern document). This document does not
-reorder, accelerate, or reopen that roadmap. It establishes the contract
-each of those documents — and any additional Digital Operating System
-Domain Architecture document the platform's formal architecture
-governance process later authorizes — must satisfy once authored, so
-that none of them needs to rediscover Sections 3–14 independently, and
-so that a future Digital Operating System not yet named in `XP-0014` can
-still be added consistently, following this same contract, rather than
-requiring `XP-0014` itself to be revised first.
+(the last as a shared pattern document), and remains the sole
+authoritative roadmap for which Digital Operating Systems the platform
+is expected to receive. This document does not reorder, accelerate,
+reopen, or expand that roadmap, and authorizes no Digital Operating
+System Domain Architecture document of its own — named in `XP-0014`
+already or not. It establishes only the contract each roadmapped
+document must satisfy once its own work is actually authorized, so that
+none of them needs to rediscover Sections 3–14 independently. A future
+Digital Operating System not yet named in `XP-0014`'s roadmap requires
+that roadmap itself to be formally revised and re-approved — per
+`XP-0014`'s own governance and `XP-0002` — before this document's
+contract has anything to apply to; this document is never, on its own, a
+substitute for that revision.
 
 No specific Digital Operating System, Domain Architecture document, or
 `XP-NNNN` identifier is authorized, designed, or reserved by this
