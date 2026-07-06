@@ -6,14 +6,14 @@
 |---|---|
 | **Document ID** | XP-0003 |
 | **Title** | Repository Standards |
-| **Version** | 0.2 |
+| **Version** | 0.3 |
 | **Status** | Draft |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | High |
 | **Audience** | Developers / Architects / AI Agents |
-| **Last Updated** | 2026-07-04 |
-| **Related Documents** | XP-0000, XP-0003 (self), XP-0004 |
+| **Last Updated** | 2026-07-06 |
+| **Related Documents** | XP-0000, XP-0003 (self), XP-0004, XP-0010 — Documentation Writing Standard |
 
 ---
 
@@ -106,6 +106,13 @@ fixed, singular, well-known entry points rather than a numbered series.
 - A document lives in the folder matching its primary subject domain,
   regardless of its `XP-NNNN` number — the folder does not need to match
   numeric order.
+- A non-authoritative Blueprint planning artifact (as defined in
+  `xp-0010-documentation-writing-standard.md` §3) is placed in a
+  `blueprints/` subfolder within the existing top-level folder that owns
+  the authoritative document, repository scope, or document set the
+  Blueprint directly prepares or supports — never in a top-level folder
+  of its own, and never in a top-level folder that does not already
+  exist.
 
 ### Markdown Formatting Conventions
 
@@ -150,3 +157,4 @@ None at this time.
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: file naming convention (with correction of prior uppercase example), folder structure rules, markdown conventions. |
 | 0.2 | 2026-07-04 | Claude Code | Recognized unnumbered top-level folders as an approved category for cross-cutting architecture spanning every Digital Operating System (`modules/`, and newly `digital-operating-systems/` for `XP-0030`), distinct from the two-digit numbered domain folders. No renumbering or reordering of existing numbered folders. |
+| 0.3 | 2026-07-06 | Claude Code | Closed a governance gap in Folder Structure Rules: added one generic rule stating that a non-authoritative Blueprint planning artifact (per `xp-0010-documentation-writing-standard.md` §3) is placed in a `blueprints/` subfolder of the existing top-level folder it informs, never as a new top-level folder and never inside one that does not already exist. Introduces no numbering scheme, names no specific Blueprint type, and does not redefine what a Blueprint is. No other top-level rule changed; no other document modified. |

@@ -14,10 +14,10 @@ domains `XP-0014` §9 anticipates a Domain Architecture document for, and
 it is not a Digital Operating System governed by `XP-0030`. Its
 classification — whether it is a Module, a Capability, a Shared
 Ecosystem Service, or a Core Platform responsibility — is not yet
-determined, per `XP-0027`, the approved Documentation Roadmap, and the
-approved Repository Documentation Matrix. This folder is the designated
-location where that classification, and the architecture document that
-follows from it, will be documented once resolved.
+determined, per `XP-0027` and the approved Documentation Roadmap. This
+folder is the designated location where that classification, and the
+architecture document that follows from it, will be documented once
+resolved.
 
 # Repository Scope
 

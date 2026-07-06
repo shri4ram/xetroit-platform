@@ -10,6 +10,72 @@ Format: newest entries first.
 
 ---
 
+## 2026-07-06 — Repository Synchronization: Folder READMEs Added, Phantom Reference Corrected
+
+Closed a set of metadata-only gaps identified by a repository governance
+consistency audit. Documentation-hygiene only — no `XP-NNNN` document,
+`DOCUMENT-INDEX.md`, or `DOCUMENTATION-ROADMAP.md` was modified, no
+folder was moved or renamed, and no architecture, lifecycle status, or
+numbering changed.
+
+- Corrected `docs/07-payments/README.md` and `docs/08-ai/README.md`,
+  each of which cited an "approved Repository Documentation Matrix" as
+  an authority for an unresolved classification question. No such
+  document exists anywhere in the repository, is registered in
+  `DOCUMENT-INDEX.md`, or is named in `DOCUMENTATION-ROADMAP.md`. Both
+  citations were removed; each folder's open classification question now
+  cites only `XP-0027` and the approved Documentation Roadmap, which do
+  exist and already govern it.
+- Added `docs/modules/README.md`, closing the gap `DOCUMENTATION-ROADMAP.md`
+  §2.5 and §3.4 already identified: the folder holding `XP-0026`–`XP-0029`
+  had no navigation README describing its purpose, contents, or status.
+  Lists the four foundation documents and notes the non-authoritative
+  `blueprints/module-architecture-blueprint.md` planning artifact without
+  restating its content.
+- Added `docs/digital-operating-systems/README.md`, closing the
+  equivalent gap `DOCUMENTATION-ROADMAP.md` §2.6 and §3.4 identified for
+  the folder holding `XP-0030`.
+- Both new READMEs follow the same pattern already established by
+  `docs/00-governance/README.md` (Purpose, Documents in This Folder,
+  Current Status) and state plainly that their respective documents
+  remain `Draft`, not `Approved`, per `DOCUMENT-INDEX.md`.
+
+## 2026-07-06 — XP-0003 v0.3: Blueprint Placement Rule; Module Architecture Blueprint Added
+
+`xp-0003-repository-standards.md` (v0.2 → v0.3) added one rule to its
+Folder Structure Rules section closing a governance gap: a
+non-authoritative Blueprint planning artifact (per
+`xp-0010-documentation-writing-standard.md` §3) is placed in a
+`blueprints/` subfolder within the existing top-level folder that owns
+the authoritative document, repository scope, or document set the
+Blueprint directly prepares or supports — never in a top-level folder of
+its own, and never in a top-level folder that does not already exist.
+Its Related Documents metadata field was also updated to list `XP-0010`,
+which the new rule substantively references. No other rule, section, or
+top-level folder structure was changed.
+
+- Using that rule, added `docs/modules/blueprints/module-architecture-blueprint.md`
+  — a non-authoritative planning reference offering a recommended
+  structure and suggested contents for a future Module Architecture
+  document, subordinate to `XP-0026`–`XP-0030`. It is a Blueprint per
+  `xp-0010-documentation-writing-standard.md` §3: it carries no authority
+  of its own, designs no module, and introduces no capability,
+  implementation, technology, database, API, UI, or product detail.
+- No `XP-NNNN` architecture document was modified; the Platform
+  Constitution, `XP-0014`, the Core Platform Domain Architecture, and
+  `XP-0026`–`XP-0030` are unchanged.
+
+## 2026-07-04 — XP-0003 v0.2: Unnumbered Top-Level Folder Recognition (Governance Log Correction)
+
+Retroactively logging a governance change already recorded in
+`xp-0003-repository-standards.md`'s own Revision History but previously
+missing from this log: `xp-0003-repository-standards.md` (v0.1 → v0.2)
+recognized unnumbered top-level folders as an approved category for
+cross-cutting architecture spanning every Digital Operating System
+(`modules/`, and newly `digital-operating-systems/` for `XP-0030`),
+distinct from the two-digit numbered domain folders. No renumbering or
+reordering of existing numbered folders resulted.
+
 ## 2026-07-04 — XP-0029: Module Lifecycle (Fourth Phase 3 Document)
 
 Added `XP-0029 — Module Lifecycle` (`modules/xp-0029-module-lifecycle.md`),

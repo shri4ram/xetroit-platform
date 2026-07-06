@@ -13,9 +13,9 @@ identifies AI as a folder with a document already registered as
 five domains `XP-0014` §9 anticipates a Domain Architecture document for,
 and it is not a Digital Operating System governed by `XP-0030`. Its
 exact architecture tier is not otherwise specified by the approved
-Documentation Roadmap or Repository Documentation Matrix, and is not
-decided by this document. This folder is the designated location where
-that architecture will be documented once authored.
+Documentation Roadmap, and is not decided by this document. This folder
+is the designated location where that architecture will be documented
+once authored.
 
 # Repository Scope
 
@@ -63,8 +63,7 @@ this one.
 
 - **AI Domain Architecture** — the single primary architecture document
   for AI; its exact tier is not specified by the approved Documentation
-  Roadmap or Repository Documentation Matrix, and is not decided by this
-  document.
+  Roadmap, and is not decided by this document.
 
 # Current Status
 
