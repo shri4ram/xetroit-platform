@@ -1,6 +1,6 @@
 # `digital-operating-systems/` — Digital Operating System Architecture
 
-**Status:** In Review
+**Status:** Approved
 
 ## Purpose
 
@@ -40,10 +40,8 @@ Future Vertical OS location still to be assigned, per
 
 ## Current Status
 
-**In Review** — `XP-0030` has real, substantive content, is registered in
-`../DOCUMENT-INDEX.md`, and has advanced from `Draft` to `In Review`. It
-is not yet `Approved`; until the Founder approves it, it remains
-authoritative for planning and discussion only, per the lifecycle defined
-in `00-governance/xp-0000-documentation-governance.md`. No Digital
-Operating System's own Domain Architecture document may be authored as
-authoritative until `XP-0030` reaches `Approved`, per `XP-0014` §8.
+**Approved** — `XP-0030` is registered in `../DOCUMENT-INDEX.md` as
+`Approved` (Founder-approved, Phase 1 Foundation Closeout, 2026-07-07),
+and is now authoritative. A specific Digital Operating System's own
+Domain Architecture document may now be authored against it, per
+`XP-0014` §8.

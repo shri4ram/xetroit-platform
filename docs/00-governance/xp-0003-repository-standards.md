@@ -6,8 +6,8 @@
 |---|---|
 | **Document ID** | XP-0003 |
 | **Title** | Repository Standards |
-| **Version** | 0.3 |
-| **Status** | In Review |
+| **Version** | 1.0 |
+| **Status** | Approved |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | High |
@@ -144,12 +144,12 @@ None at this time.
 
 ## Approval Checklist
 
-- [ ] Content reviewed by Founder
-- [ ] Reviewed by ChatGPT (CTO / Product Architect)
-- [ ] Reviewed by Codex
-- [ ] No open blocking questions remain
-- [ ] Cross-references updated in `DOCUMENT-INDEX.md`
-- [ ] Status updated in document metadata and `DOCUMENT-INDEX.md`
+- [x] Content reviewed by Founder
+- [x] Reviewed by ChatGPT (CTO / Product Architect)
+- [x] Reviewed by Codex
+- [x] No open blocking questions remain
+- [x] Cross-references updated in `DOCUMENT-INDEX.md`
+- [x] Status updated in document metadata and `DOCUMENT-INDEX.md`
 
 ## Revision History
 
@@ -158,3 +158,4 @@ None at this time.
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: file naming convention (with correction of prior uppercase example), folder structure rules, markdown conventions. |
 | 0.2 | 2026-07-04 | Claude Code | Recognized unnumbered top-level folders as an approved category for cross-cutting architecture spanning every Digital Operating System (`modules/`, and newly `digital-operating-systems/` for `XP-0030`), distinct from the two-digit numbered domain folders. No renumbering or reordering of existing numbered folders. |
 | 0.3 | 2026-07-06 | Claude Code | Closed a governance gap in Folder Structure Rules: added one generic rule stating that a non-authoritative Blueprint planning artifact (per `xp-0010-documentation-writing-standard.md` §3) is placed in a `blueprints/` subfolder of the existing top-level folder it informs, never as a new top-level folder and never inside one that does not already exist. Introduces no numbering scheme, names no specific Blueprint type, and does not redefine what a Blueprint is. No other top-level rule changed; no other document modified. |
+| 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. Approval Checklist fully satisfied. No content change. |

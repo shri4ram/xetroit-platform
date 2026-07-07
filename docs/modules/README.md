@@ -1,6 +1,6 @@
 # `modules/` — Module Architecture
 
-**Status:** In Review
+**Status:** Approved
 
 ## Purpose
 
@@ -46,11 +46,9 @@ once identified per `XP-0026` §13 and `XP-0014` §8.
 
 ## Current Status
 
-**In Review** — `XP-0026`–`XP-0029` have real, substantive content, are
-registered in `../DOCUMENT-INDEX.md`, and have advanced from `Draft` to
-`In Review`. They are not yet `Approved`; until the Founder approves each
-one, they remain authoritative for planning and discussion only, per the
-lifecycle defined in `00-governance/xp-0000-documentation-governance.md`.
-Specific per-module Module Architecture documents remain Future, gated
-per `XP-0014` §8 on their owning Digital Operating System's Domain
+**Approved** — `XP-0026`–`XP-0029` are registered in
+`../DOCUMENT-INDEX.md` as `Approved` (Founder-approved, Phase 1
+Foundation Closeout, 2026-07-07), and are now authoritative. Specific
+per-module Module Architecture documents remain Future, gated per
+`XP-0014` §8 on their owning Digital Operating System's Domain
 Architecture reaching `Approved`.

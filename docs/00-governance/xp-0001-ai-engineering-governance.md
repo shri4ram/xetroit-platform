@@ -6,8 +6,8 @@
 |---|---|
 | **Document ID** | XP-0001 |
 | **Title** | AI Engineering Governance |
-| **Version** | 0.1 |
-| **Status** | In Review |
+| **Version** | 1.0 |
+| **Status** | Approved |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | Critical |
@@ -192,15 +192,16 @@ step 3) but the sequence itself is never bypassed.
 
 ## Approval Checklist
 
-- [ ] Content reviewed by Founder
-- [ ] Reviewed by ChatGPT (CTO / Product Architect)
-- [ ] Reviewed by Codex
-- [ ] No open blocking questions remain
-- [ ] Cross-references updated in `DOCUMENT-INDEX.md`
-- [ ] Status updated in document metadata and `DOCUMENT-INDEX.md`
+- [x] Content reviewed by Founder
+- [x] Reviewed by ChatGPT (CTO / Product Architect)
+- [x] Reviewed by Codex
+- [x] No open blocking questions remain
+- [x] Cross-references updated in `DOCUMENT-INDEX.md`
+- [x] Status updated in document metadata and `DOCUMENT-INDEX.md`
 
 ## Revision History
 
 | Version | Date | Author | Summary of Change |
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: roles, responsibilities, approval authority matrix, AI engineering workflow. |
+| 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. The remaining Open Question (Codex blocking authority) was assessed as non-blocking and Founder-confirmed; Approval Checklist fully satisfied. No content in Sections 1–17 changed. |

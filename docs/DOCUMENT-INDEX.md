@@ -32,15 +32,15 @@ definition.
 
 | ID | Title | Folder | Status | Owner |
 |---|---|---|---|---|
-| XP-0000 | Documentation Governance | 00-governance/ | In Review | Founder |
-| XP-0001 | AI Engineering Governance | 00-governance/ | In Review | Founder |
-| XP-0002 | Approval Workflow | 00-governance/ | In Review | Founder |
-| XP-0003 | Repository Standards | 00-governance/ | In Review | Founder |
-| XP-0004 | Architecture Decision Records | 00-governance/ | In Review | Founder |
-| XP-0005 | Engineering Principles | 00-governance/ | In Review | Founder |
-| XP-0006 | Engineering Decision Pyramid | 00-governance/ | In Review | Founder |
-| XP-0007 | Repository Constitution | 00-governance/ | In Review | Founder |
-| XP-0008 | AI Decision Checklist | 00-governance/ | In Review | Founder |
+| XP-0000 | Documentation Governance | 00-governance/ | Approved | Founder |
+| XP-0001 | AI Engineering Governance | 00-governance/ | Approved | Founder |
+| XP-0002 | Approval Workflow | 00-governance/ | Approved | Founder |
+| XP-0003 | Repository Standards | 00-governance/ | Approved | Founder |
+| XP-0004 | Architecture Decision Records | 00-governance/ | Approved | Founder |
+| XP-0005 | Engineering Principles | 00-governance/ | Approved | Founder |
+| XP-0006 | Engineering Decision Pyramid | 00-governance/ | Approved | Founder |
+| XP-0007 | Repository Constitution | 00-governance/ | Approved | Founder |
+| XP-0008 | AI Decision Checklist | 00-governance/ | Approved | Founder |
 | XP-0009 | Why XETROIT Exists | 00-company/ | Approved | Founder |
 | XP-0010 | Documentation Writing Standard | 00-governance/ | Approved | Founder |
 | XP-0011 | XETROIT — The Unified Digital Platform | 01-platform/ | Approved | Founder |
@@ -58,11 +58,33 @@ definition.
 | XP-0023 | Insight & Governance Domain Architecture | 02-core-platform/insight-governance/ | Approved | Founder |
 | XP-0024 | Commercial Domain Architecture | 02-core-platform/commercial/ | Approved | Founder |
 | XP-0025 | Platform Experience Domain Architecture | 02-core-platform/platform-experience/ | Approved | Founder |
-| XP-0026 | Module Architecture | modules/ | In Review | Founder |
-| XP-0027 | Module Classification Principles | modules/ | In Review | Founder |
-| XP-0028 | Module Composition Principles | modules/ | In Review | Founder |
-| XP-0029 | Module Lifecycle | modules/ | In Review | Founder |
-| XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | In Review | Founder |
+| XP-0026 | Module Architecture | modules/ | Approved | Founder |
+| XP-0027 | Module Classification Principles | modules/ | Approved | Founder |
+| XP-0028 | Module Composition Principles | modules/ | Approved | Founder |
+| XP-0029 | Module Lifecycle | modules/ | Approved | Founder |
+| XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | Approved | Founder |
+
+> **Phase 1 Foundation Closeout Complete — XP-0000–XP-0008 and
+> XP-0026–XP-0030 Approved** (2026-07-07): Per Founder decision, all
+> fourteen Phase 1 documents moved from `In Review` to `Approved`:
+> `XP-0000`–`XP-0008` (governance series) and `XP-0026`–`XP-0030` (Module
+> Foundation and Digital Operating System Architecture). For
+> `XP-0000`–`XP-0008`, each document's own Document Metadata table was
+> updated to `Status: Approved`, `Version: 1.0` (per
+> `xp-0010-documentation-writing-standard.md` §12), with a corresponding
+> Revision History entry; their Approval Checklists are now fully
+> satisfied. `XP-0026`–`XP-0030` follow the Domain Architecture pattern
+> and carry no Document Metadata table or Approval Checklist of their own
+> (`XP-0010` §3–4, §17); their `Approved` status is recorded here and in
+> `docs/modules/README.md` / `docs/digital-operating-systems/README.md`
+> only. This satisfies the Phase 1 ("Foundation Closeout") gate defined in
+> `DOCUMENTATION-ROADMAP.md` §3.1, which is updated accordingly. This
+> closeout does not constitute a Freeze — Freeze remains a separate,
+> not-yet-performed step per the standard review workflow (CTO → Founder
+> Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes →
+> Final CTO Review → Governance Closeout → **Freeze**). No architectural
+> content, business rule, or technical rule in any of the fourteen
+> documents was altered by this closeout.
 
 > **XP-0030 — Digital Operating System Architecture: First Phase 4
 > Document** (2026-07-04): `XP-0030 — Digital Operating System
@@ -79,8 +101,9 @@ definition.
 > cross-cutting top-level folder analogous to `modules/`, since this
 > document spans every Digital Operating System rather than belonging to
 > one numbered domain folder (see `xp-0003-repository-standards.md`).
-> Registered here as `Draft`; `Approved` status is not asserted by this
-> entry.
+> Registered here as `Draft` on 2026-07-04; superseded 2026-07-07, when
+> `XP-0030` reached `Approved` as part of the Phase 1 Foundation Closeout
+> (see entry above).
 
 > **XP-0029 — Module Lifecycle: Fourth Phase 3 Document** (2026-07-04):
 > `XP-0029 — Module Lifecycle` defines how an already-classified,
@@ -94,8 +117,9 @@ definition.
 > explicitly distinguished from the document lifecycle status already
 > used throughout `DOCUMENT-INDEX.md`. No further Phase 3 foundation
 > document is currently anticipated. Filed alongside `XP-0026`–`XP-0028`
-> in `modules/`. Registered here as `Draft`; `Approved` status is not
-> asserted by this entry.
+> in `modules/`. Registered here as `Draft` on 2026-07-04; superseded
+> 2026-07-07, when `XP-0029` reached `Approved` as part of the Phase 1
+> Foundation Closeout (see entry above).
 
 > **XP-0028 — Module Composition Principles: Third Phase 3 Document**
 > (2026-07-04): `XP-0028 — Module Composition Principles` defines how an
@@ -107,8 +131,9 @@ definition.
 > without redefining either. It does not define Module Lifecycle, which
 > remains deferred to a future document, and it does not describe
 > implementation or runtime communication. Filed alongside `XP-0026` and
-> `XP-0027` in `modules/`. Registered here as `Draft`; `Approved` status
-> is not asserted by this entry.
+> `XP-0027` in `modules/`. Registered here as `Draft` on 2026-07-04;
+> superseded 2026-07-07, when `XP-0028` reached `Approved` as part of the
+> Phase 1 Foundation Closeout (see entry above).
 
 > **XP-0027 — Module Classification Principles: Second Phase 3 Document**
 > (2026-07-04): `XP-0027 — Module Classification Principles` defines how
@@ -119,8 +144,9 @@ definition.
 > it, and without designing any specific module, capability, feature,
 > workflow, or configuration. It does not define Module composition or
 > Module lifecycle, which remain deferred to future documents. Filed
-> alongside `XP-0026` in `modules/`. Registered here as `Draft`;
-> `Approved` status is not asserted by this entry.
+> alongside `XP-0026` in `modules/`. Registered here as `Draft` on
+> 2026-07-04; superseded 2026-07-07, when `XP-0027` reached `Approved` as
+> part of the Phase 1 Foundation Closeout (see entry above).
 
 > **XP-0026 — Module Architecture: First Phase 3 Document** (2026-07-04):
 > `XP-0026 — Module Architecture` establishes the constitutional meaning
@@ -134,8 +160,9 @@ definition.
 > `modules/` — a first-class architectural category rather than an
 > `XP`-numbered folder, since Module Architecture is cross-cutting across
 > every Digital Operating System rather than specific to any one of them.
-> Registered here as `Draft`; `Approved` status is not asserted by this
-> entry.
+> Registered here as `Draft` on 2026-07-04; superseded 2026-07-07, when
+> `XP-0026` reached `Approved` as part of the Phase 1 Foundation Closeout
+> (see entry above).
 
 > **Core Platform Domain Architecture Complete — Index Synchronized**
 > (2026-07-04): Registers `XP-0016` through `XP-0025` — Identity,
@@ -273,8 +300,10 @@ definition.
 > Founder's direction to proceed from the established company perspective
 > (see `xp-0009-why-xetroit-exists.md` Revision History). It was authored
 > ahead of `XP-0000`–`XP-0008` formally reaching `Approved` status (they
-> remain `Draft`); see the recommendation in `CHANGELOG.md` to reconcile
-> this formally.
+> were `Draft` at the time this entry was written, 2026-07-02; all nine
+> reached `Approved` 2026-07-07 — see the Phase 1 Foundation Closeout
+> entry above). The `CHANGELOG.md` recommendation to reconcile this
+> formally has since been carried out.
 
 > **Milestone 0.3 — Engineering Operating System** (2026-07-02): XP-0005
 > through XP-0008 extend the governance series established by

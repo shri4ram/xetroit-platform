@@ -6,8 +6,8 @@
 |---|---|
 | **Document ID** | XP-0002 |
 | **Title** | Approval Workflow |
-| **Version** | 0.2 |
-| **Status** | In Review |
+| **Version** | 1.0 |
+| **Status** | Approved |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | Critical |
@@ -136,12 +136,12 @@ None at this time.
 
 ## Approval Checklist
 
-- [ ] Content reviewed by Founder
-- [ ] Reviewed by ChatGPT (CTO / Product Architect)
-- [ ] Reviewed by Codex
-- [ ] No open blocking questions remain
-- [ ] Cross-references updated in `DOCUMENT-INDEX.md`
-- [ ] Status updated in document metadata and `DOCUMENT-INDEX.md`
+- [x] Content reviewed by Founder
+- [x] Reviewed by ChatGPT (CTO / Product Architect)
+- [x] Reviewed by Codex
+- [x] No open blocking questions remain
+- [x] Cross-references updated in `DOCUMENT-INDEX.md`
+- [x] Status updated in document metadata and `DOCUMENT-INDEX.md`
 
 ## Revision History
 
@@ -149,3 +149,4 @@ None at this time.
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: status transition table, Approval Gate, Codex finding resolution rule. |
 | 0.2 | 2026-07-07 | Claude Code | Founder-approved amendment: Step 6's precondition now reads "every requirement `xp-0010-documentation-writing-standard.md` defines for reaching `Approved` is satisfied," replacing the prior unconditional "Approval Checklist fully satisfied" — resolving a conflict between this document's previously pattern-unaware scope and `XP-0010` §17's existing "where the specification pattern is used" qualifier. Added a clarifying sentence after the Status Transition Steps table stating that this document does not define, enumerate, or presume any document's structural pattern, required sections, or checklist. Added `XP-0010` as a Dependency and to Related Documents. No change to the Approval Gate, lifecycle statuses, Founder-only approval authority, the Codex-findings-resolution requirement, status transitions, or Scope. |
+| 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. Approval Checklist fully satisfied. No content in Purpose through AI Agent Notes changed. |
