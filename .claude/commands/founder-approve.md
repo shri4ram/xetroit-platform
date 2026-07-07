@@ -1,9 +1,9 @@
 ---
-description: Operationalize a Founder decision to move a document from In Review to Approved. Never sets Approved status itself.
+description: Record an explicit Founder decision by moving a document from In Review to Approved directly in the repository. Claude performs the mechanical update only; it never decides.
 argument-hint: [document or approval batch]
 ---
 
-Prepare Founder Approval for: $ARGUMENTS
+Record Founder Approval for: $ARGUMENTS
 
 This command operationalizes the tail end of the existing review cycle
 (`.claude/context/review-workflow.md`, `.claude/workflows/review-cycle.md`):
@@ -11,8 +11,12 @@ Codex review and its findings are already resolved, any resulting change
 has already been captured in a manual git commit, and what remains is
 the Founder's own decision (`docs/00-governance/xp-0002-approval-workflow.md`
 step 6: `In Review → Approved` — **Founder only**). This command does not
-add a step to that cycle and does not perform the decision itself — it
-prepares for it and stops at the point only the Founder may cross.
+add a step to that cycle and does not make that decision — the decision
+belongs to the Founder alone, given explicitly in the current
+instruction. Once given, Claude performs the mechanical repository
+update recording it directly; Claude never infers, assumes, or replays
+a decision from an earlier turn, and never proceeds without one present
+in the current instruction.
 
 ## Pre-Checks
 
@@ -41,31 +45,37 @@ prepares for it and stops at the point only the Founder may cross.
   "continue," "looks good," or "proceed."
 - If that confirmation is missing, **stop immediately** and state
   exactly what explicit confirmation is needed before continuing. Do
-  not draft, imply, or stage an approval in anticipation of one.
+  not perform, imply, or stage any part of the update in anticipation
+  of one.
 
 ## Allowed Actions (only once confirmation is present)
 
-- Prepare a complete, reviewable, **unapplied** patch covering exactly
-  what `XP-0002` and `docs/00-governance/xp-0010-documentation-writing-standard.md`
-  §12 require for the transition: `docs/DOCUMENT-INDEX.md` status
-  row(s), each document's own internal Document Metadata table where one
-  exists (`Status` → `Approved`, `Version` → exactly `1.0` — per §12,
-  "upon first reaching `Approved`, the version becomes `1.0`," with no
-  other value — `Last Updated`, a new Revision History row), and a
-  `docs/CHANGELOG.md` entry recording the event. This command covers
-  only a document's first transition into `Approved`; a later
+- Apply directly, to the repository, exactly what `XP-0002` and
+  `docs/00-governance/xp-0010-documentation-writing-standard.md` §12
+  require for the transition: update `docs/DOCUMENT-INDEX.md` status
+  row(s), update each document's own internal Document Metadata table
+  where one exists (`Status` → `Approved`, `Version` → exactly `1.0` —
+  per §12, "upon first reaching `Approved`, the version becomes `1.0`,"
+  with no other value — `Last Updated`, a new Revision History row), and
+  add a `docs/CHANGELOG.md` entry recording the event. This command
+  covers only a document's first transition into `Approved`; a later
   post-approval revision (`1.0` → `2.0` or `1.0` → `1.1`) is out of
-  scope and not prepared by this command.
-- Note plainly, in the same output, which documents (e.g. those
+  scope.
+- Save every file changed.
+- Report plainly, in the same output, which documents (e.g. those
   following the Domain Architecture pattern) carry no internal metadata
-  table to change, per `xp-0010` §3.
+  table to update, per `xp-0010` §3.
 
 ## Forbidden Actions
 
-- Never write `Approved` (or any lifecycle status) to any file as part
-  of this command's own execution, confirmed or not — per
-  `.claude/CLAUDE.md` §4, no AI agent, Claude Code included, ever sets
-  that status itself. The Founder applies the prepared patch.
+- Never apply any part of this update without an explicit, unambiguous
+  Founder decision to approve present in the current instruction, per
+  `.claude/CLAUDE.md` §4 and `XP-0002` step 6. Absent that explicit
+  decision, take no action and state what is missing.
+- Never make the approval decision itself — Claude records a decision
+  the Founder has already given; it does not evaluate whether a
+  document *should* be approved beyond the Pre-Checks' factual
+  readiness criteria.
 - Do not modify any document's substantive architecture, boundaries, or
   content — this is a lifecycle action only.
 - Do not modify `docs/DOCUMENTATION-ROADMAP.md`'s phase structure, gates,
@@ -78,7 +88,8 @@ prepares for it and stops at the point only the Founder may cross.
 
 ## Expected Output
 
-A complete, unapplied patch (files, exact diffs) plus a plain statement
-that this patch has not been applied and requires the Founder to apply
-it directly. If Founder confirmation was missing, output only the stop
-notice and what confirmation is required — no patch.
+Confirmation of exactly what was changed: files modified, the lifecycle
+fields changed in each, and a statement that the update has been saved
+to the repository, recording the Founder's decision as given. If Founder
+confirmation was missing, output only the stop notice and what
+confirmation is required — no repository change.

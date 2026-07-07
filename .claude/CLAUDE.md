@@ -54,8 +54,11 @@ Claude Fixes → Final CTO Review → Governance Closeout → Freeze
 This sits inside the broader lifecycle defined by `XP-0000`–`XP-0002`
 (`Planned → Draft → In Review → Approved`). See
 `.claude/context/review-workflow.md` and `.claude/workflows/` for the
-operational detail. Only the Founder moves a document to `Approved`; no
-AI agent — Claude Code included — ever sets that status itself.
+operational detail. Only the Founder may decide a document is `Approved`. An AI agent may
+perform the mechanical repository update recording that decision, but
+only when the current instruction contains an explicit, unambiguous
+Founder decision to approve — never inferred, assumed, or carried
+forward from an earlier turn.
 
 ## 5. Prefer Minimal, Precise Edits
 
