@@ -7,12 +7,12 @@
 | **Document ID** | XP-0004 |
 | **Title** | Architecture Decision Records |
 | **Version** | 0.1 |
-| **Status** | Draft |
+| **Status** | In Review |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | High |
 | **Audience** | Developers / Architects / AI Agents |
-| **Last Updated** | 2026-07-02 |
+| **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0001, XP-0002, XP-0003 |
 
 ---

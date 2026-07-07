@@ -7,12 +7,12 @@
 | **Document ID** | XP-0006 |
 | **Title** | Engineering Decision Pyramid |
 | **Version** | 0.1 |
-| **Status** | Draft |
+| **Status** | In Review |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | Critical |
 | **Audience** | Investors / Developers / Architects / AI Agents |
-| **Last Updated** | 2026-07-02 |
+| **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0001, XP-0005, XP-0007, XP-0008 |
 
 ---

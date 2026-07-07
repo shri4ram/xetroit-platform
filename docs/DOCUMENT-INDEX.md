@@ -1,7 +1,7 @@
 # Document Index
 
 **Status:** Foundation Draft
-**Last Updated:** 2026-07-04
+**Last Updated:** 2026-07-07
 
 This is the master index of all official XETROIT Platform documents. Every
 document must be registered here at the moment it is identified as needed
@@ -32,15 +32,15 @@ definition.
 
 | ID | Title | Folder | Status | Owner |
 |---|---|---|---|---|
-| XP-0000 | Documentation Governance | 00-governance/ | Draft | Founder |
-| XP-0001 | AI Engineering Governance | 00-governance/ | Draft | Founder |
-| XP-0002 | Approval Workflow | 00-governance/ | Draft | Founder |
-| XP-0003 | Repository Standards | 00-governance/ | Draft | Founder |
-| XP-0004 | Architecture Decision Records | 00-governance/ | Draft | Founder |
-| XP-0005 | Engineering Principles | 00-governance/ | Draft | Founder |
-| XP-0006 | Engineering Decision Pyramid | 00-governance/ | Draft | Founder |
-| XP-0007 | Repository Constitution | 00-governance/ | Draft | Founder |
-| XP-0008 | AI Decision Checklist | 00-governance/ | Draft | Founder |
+| XP-0000 | Documentation Governance | 00-governance/ | In Review | Founder |
+| XP-0001 | AI Engineering Governance | 00-governance/ | In Review | Founder |
+| XP-0002 | Approval Workflow | 00-governance/ | In Review | Founder |
+| XP-0003 | Repository Standards | 00-governance/ | In Review | Founder |
+| XP-0004 | Architecture Decision Records | 00-governance/ | In Review | Founder |
+| XP-0005 | Engineering Principles | 00-governance/ | In Review | Founder |
+| XP-0006 | Engineering Decision Pyramid | 00-governance/ | In Review | Founder |
+| XP-0007 | Repository Constitution | 00-governance/ | In Review | Founder |
+| XP-0008 | AI Decision Checklist | 00-governance/ | In Review | Founder |
 | XP-0009 | Why XETROIT Exists | 00-company/ | Approved | Founder |
 | XP-0010 | Documentation Writing Standard | 00-governance/ | Approved | Founder |
 | XP-0011 | XETROIT — The Unified Digital Platform | 01-platform/ | Approved | Founder |
@@ -58,11 +58,11 @@ definition.
 | XP-0023 | Insight & Governance Domain Architecture | 02-core-platform/insight-governance/ | Approved | Founder |
 | XP-0024 | Commercial Domain Architecture | 02-core-platform/commercial/ | Approved | Founder |
 | XP-0025 | Platform Experience Domain Architecture | 02-core-platform/platform-experience/ | Approved | Founder |
-| XP-0026 | Module Architecture | modules/ | Draft | Founder |
-| XP-0027 | Module Classification Principles | modules/ | Draft | Founder |
-| XP-0028 | Module Composition Principles | modules/ | Draft | Founder |
-| XP-0029 | Module Lifecycle | modules/ | Draft | Founder |
-| XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | Draft | Founder |
+| XP-0026 | Module Architecture | modules/ | In Review | Founder |
+| XP-0027 | Module Classification Principles | modules/ | In Review | Founder |
+| XP-0028 | Module Composition Principles | modules/ | In Review | Founder |
+| XP-0029 | Module Lifecycle | modules/ | In Review | Founder |
+| XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | In Review | Founder |
 
 > **XP-0030 — Digital Operating System Architecture: First Phase 4
 > Document** (2026-07-04): `XP-0030 — Digital Operating System
