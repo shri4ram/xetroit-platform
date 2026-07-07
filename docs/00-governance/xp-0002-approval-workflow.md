@@ -6,14 +6,14 @@
 |---|---|
 | **Document ID** | XP-0002 |
 | **Title** | Approval Workflow |
-| **Version** | 0.1 |
+| **Version** | 0.2 |
 | **Status** | In Review |
 | **Owner** | Founder |
 | **Category** | Governance |
 | **Priority** | Critical |
 | **Audience** | Developers / Architects / AI Agents |
 | **Last Updated** | 2026-07-07 |
-| **Related Documents** | XP-0000, XP-0001, XP-0004 |
+| **Related Documents** | XP-0000, XP-0001, XP-0004, XP-0010 |
 
 ---
 
@@ -48,7 +48,10 @@ apply to non-lifecycle scaffolding files marked `Foundation Draft` (see
 
 ## Dependencies
 
-`xp-0000-documentation-governance.md`, `xp-0001-ai-engineering-governance.md`.
+`xp-0000-documentation-governance.md`, `xp-0001-ai-engineering-governance.md`,
+`xp-0010-documentation-writing-standard.md` (sole authority for which
+requirements apply to which document for reaching `Approved`; this
+document does not enumerate them).
 
 ## Architecture Notes
 
@@ -90,9 +93,17 @@ and human contributors.
 | 3 | `Draft` → `In Review` | ChatGPT or Claude Code | All template sections completed (or explicitly marked N/A with reasoning); Open Questions list is current. |
 | 4 | (within `In Review`) Codex review | Codex | Document is in `In Review`. Codex produces a findings list (may be empty). |
 | 5 | `In Review` → `Draft` (rollback) | ChatGPT or Claude Code | Triggered when Codex findings, or Founder feedback, require rework. |
-| 6 | `In Review` → `Approved` | **Founder only** | All Codex findings resolved (fixed or explicitly deferred with written reasoning in the document); no open blocking questions remain; Approval Checklist fully satisfied. |
+| 6 | `In Review` → `Approved` | **Founder only** | All Codex findings resolved (fixed or explicitly deferred with written reasoning in the document); no open blocking questions remain; every requirement `xp-0010-documentation-writing-standard.md` defines for reaching `Approved` is satisfied. |
 | 7 | `Approved` → `Deprecated` | Founder | A newer Approved document supersedes it; deprecated document links to its replacement. |
 | 8 | Any → `Archived` | Founder | Content no longer relevant; retained for audit only. |
+
+Which requirements apply to a given document for reaching `Approved` —
+including whether that involves a document-specific checklist — is
+determined exclusively by `xp-0010-documentation-writing-standard.md`.
+This document defines only the workflow, transition authority, and
+Codex-resolution mechanics common to every document; it does not define,
+enumerate, or presume any document's structural pattern, required
+sections, or checklist.
 
 ### Resolving Codex Findings
 
@@ -137,3 +148,4 @@ None at this time.
 | Version | Date | Author | Summary of Change |
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: status transition table, Approval Gate, Codex finding resolution rule. |
+| 0.2 | 2026-07-07 | Claude Code | Founder-approved amendment: Step 6's precondition now reads "every requirement `xp-0010-documentation-writing-standard.md` defines for reaching `Approved` is satisfied," replacing the prior unconditional "Approval Checklist fully satisfied" — resolving a conflict between this document's previously pattern-unaware scope and `XP-0010` §17's existing "where the specification pattern is used" qualifier. Added a clarifying sentence after the Status Transition Steps table stating that this document does not define, enumerate, or presume any document's structural pattern, required sections, or checklist. Added `XP-0010` as a Dependency and to Related Documents. No change to the Approval Gate, lifecycle statuses, Founder-only approval authority, the Codex-findings-resolution requirement, status transitions, or Scope. |
