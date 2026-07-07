@@ -2,7 +2,7 @@
 
 **Status:** Foundation Draft
 **Owner:** XETROIT Architecture Team
-**Last Updated:** 2026-07-05
+**Last Updated:** 2026-07-07
 
 ---
 
@@ -81,9 +81,9 @@ Where any of those disagree with this table, they win.
   writing standard.
 - **Audience:** Founder, Claude Code, Codex, ChatGPT, any future AI agent.
 - **Planned documents:** None outstanding — `XP-0000`–`XP-0008`, `XP-0010`
-  exist. `XP-0000`–`XP-0008` remain `Draft` per `DOCUMENT-INDEX.md`;
-  advancing them to `In Review`/`Approved` is a governance action, not a
-  new document, and stays out of this roadmap's scope.
+  exist. `XP-0000`–`XP-0008` are `In Review` per `DOCUMENT-INDEX.md`
+  (advanced from `Draft`); reaching `Approved` remains a governance
+  action, not a new document, and stays out of this roadmap's scope.
 - **Dependencies:** None (root of the documentation set, alongside
   `00-company/`).
 - **Status:** Completed (all identified documents authored; lifecycle
@@ -133,9 +133,10 @@ Where any of those disagree with this table, they win.
 - **Dependencies:** `02-core-platform/` (per `XP-0026`'s own Dependencies
   section).
 - **Status:** Completed for the foundation tier (`XP-0026`–`XP-0029` exist,
-  status `Draft` per `DOCUMENT-INDEX.md`); per-module documents are Future.
-- **Note:** The `modules/` folder currently has no `README.md` — the one
-  gap identified by this roadmap in an otherwise-authored folder. See
+  status `In Review` per `DOCUMENT-INDEX.md`, advanced from `Draft`; not
+  yet `Approved`); per-module documents are Future.
+- **Note:** The `modules/` folder's `README.md` has since been added
+  (2026-07-06), closing the gap this roadmap originally identified in
   Phase 1, §3.4.
 
 ### 2.6 `digital-operating-systems/`
@@ -153,8 +154,10 @@ Where any of those disagree with this table, they win.
 - **Planned documents:** None outstanding at this cross-cutting tier.
 - **Dependencies:** `02-core-platform/`, `modules/` (per `XP-0030`'s own
   Dependencies section).
-- **Status:** Completed for this tier (`XP-0030` exists, status `Draft`).
-- **Note:** This folder currently has no `README.md`. See Phase 1, §3.4.
+- **Status:** Completed for this tier (`XP-0030` exists, status `In
+  Review`, advanced from `Draft`; not yet `Approved`).
+- **Note:** This folder's `README.md` has since been added (2026-07-06),
+  closing the gap this roadmap originally identified in Phase 1, §3.4.
 
 ### 2.7 `03-business-os/`
 
@@ -421,7 +424,7 @@ Where any of those disagree with this table, they win.
 | Phase | Name | Contents | Gate to Enter |
 |---|---|---|---|
 | 0 | Foundation | `00-company/`, `00-governance/`, `01-platform/`, `02-core-platform/`, `modules/`, `digital-operating-systems/` | None — already underway |
-| 1 | Foundation Closeout | Advance `00-governance/` (`XP-0000`–`XP-0008`) and `modules/`, `digital-operating-systems/` (`XP-0026`–`XP-0030`) from `Draft` to `Approved`; add the two missing folder READMEs (§3.4) | Phase 0 documents drafted (already true) |
+| 1 | Foundation Closeout | Advance `00-governance/` (`XP-0000`–`XP-0008`) and `modules/`, `digital-operating-systems/` (`XP-0026`–`XP-0030`) from `Draft` to `Approved` (now `In Review`; `Approved` still required); add the two missing folder READMEs (§3.4, complete) | Phase 0 documents drafted (already true) |
 | 2 | Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/` Domain Architecture documents; the Future Vertical OS shared-pattern Domain Architecture (§2.10 — folder not yet assigned) | Phase 1's `digital-operating-systems/` and `modules/` documents `Approved` (`XP-0014` §8, `XP-0030` Dependencies) |
 | 3 | Shared Ecosystem Capabilities | `06-marketplace/`, `07-payments/`, `08-ai/` — classified per `XP-0027` before authoring | Relevant Phase 2 Domain Architecture(s) `Approved`, or classified as Shared Ecosystem Service against `02-core-platform/` directly |
 | 4 | Client & Platform Standards | `09-mobile/`, `12-ui-ux/`, `13-api/` | Phase 2/3 domains it serves are `Approved` enough to have stable contracts to document against |
@@ -484,20 +487,24 @@ state.
 
 ### 3.4 Immediate Next Actions (Phase 1 Scope Only)
 
-Two gaps exist inside already-authored folders, identified while
-compiling Section 2, that block nothing but should close before Phase 2
-work begins so every folder's own front door is accurate:
+Two gaps originally identified inside already-authored folders, while
+compiling Section 2, have since closed:
 
-- The `modules/` folder currently has no `README.md`. One should be added
-  describing the folder the way every sibling folder's `README.md`
-  already does, consistent with `XP-0026`–`XP-0029`.
-- The `digital-operating-systems/` folder currently has no `README.md`.
-  One should be added consistent with `XP-0030`.
+- The `modules/` folder's `README.md` was added 2026-07-06, describing
+  the folder consistent with `XP-0026`–`XP-0029`.
+- The `digital-operating-systems/` folder's `README.md` was added
+  2026-07-06, consistent with `XP-0030`.
 
-Both are documentation-hygiene actions (adding a folder README to match an
-existing pattern), not architecture decisions, and both fall under the
-Docs-First / Minimal-Edit rules already in force — they extend, not
-replace, anything.
+Both were documentation-hygiene actions (adding a folder README to match
+an existing pattern), not architecture decisions, and both fell under the
+Docs-First / Minimal-Edit rules already in force — they extended, not
+replaced, anything.
+
+The remaining Phase 1 item — advancing `00-governance/`
+(`XP-0000`–`XP-0008`) and `modules/`, `digital-operating-systems/`
+(`XP-0026`–`XP-0030`) to `Approved` — is in progress: all fourteen
+documents are now `In Review` per `DOCUMENT-INDEX.md`, but none has yet
+reached `Approved`, so Phase 1 remains open and Phase 2 remains gated.
 
 ### 3.5 Review Workflow
 
@@ -556,8 +563,8 @@ in `xp-0000-documentation-governance.md` and used in `DOCUMENT-INDEX.md`.
 
 | Phase | Folders | Status |
 |---|---|---|
-| 0 — Foundation | `00-company/`, `00-governance/`, `01-platform/`, `02-core-platform/`, `modules/`, `digital-operating-systems/` | Documents authored; two folders are missing a `README.md` (§3.4); `00-governance/` and the `modules/`/`digital-operating-systems/` series remain `Draft` pending lifecycle advancement |
-| 1 — Foundation Closeout | (same folders, README + lifecycle gaps) | Not started |
+| 0 — Foundation | `00-company/`, `00-governance/`, `01-platform/`, `02-core-platform/`, `modules/`, `digital-operating-systems/` | Documents authored; both folder READMEs added (§3.4, complete); `00-governance/` and the `modules/`/`digital-operating-systems/` series are `In Review`, pending `Approved` |
+| 1 — Foundation Closeout | (same folders, README + lifecycle gaps) | In progress — folder READMEs complete; lifecycle advancement reached `In Review`; `Approved` still pending |
 | 2 — Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/`, Future Vertical OS (folder TBD, §2.10) | Planned |
 | 3 — Shared Ecosystem Capabilities | `06-marketplace/`, `07-payments/`, `08-ai/` | Planned |
 | 4 — Client & Platform Standards | `09-mobile/`, `12-ui-ux/`, `13-api/` | Future |
@@ -578,3 +585,4 @@ remains the sole authoritative source for any individual document's status.
 | 0.1 | 2026-07-05 | Claude Code | Initial documentation roadmap: folder-by-folder reference and execution plan covering every `docs/` area, per Founder request to organize remaining documentation work without inventing architecture. |
 | 0.2 | 2026-07-05 | Claude Code | Applied Codex governance findings: added an explicit no-relocation/no-restatement caveat (§0); added the Future Vertical OS shared-pattern Domain Architecture as a planning-only entry (§2.10) per `XP-0014` §9 and `XP-0030` §3/§15; realigned Business OS, Community OS, and Life OS entries (§2.7–2.9) with `XP-0030`'s Digital Operating System contract, removing wording that implied they were generic module folders; replaced the restated Review Workflow, Approval Workflow, Freeze Process, Cross-Reference Rules, and Naming Standards sections (§3.5–3.9) with references to their single authoritative source each; corrected the `modules/README.md` note to reflect that the file does not exist rather than exists-but-empty. No `XP-NNNN` document, `README.md`, or `DOCUMENT-INDEX.md` was touched by this revision. |
 | 0.3 | 2026-07-05 | Claude Code | Added the missing `archive/` folder entry (§2.23), listed in `README.md` §7 but previously uncovered — Purpose, Scope, Audience, Planned Documents, Dependencies, and Status, treated strictly as historical/reference with no execution phase of its own; added corresponding rows to the Documentation Phases (§3.1) and Overall Documentation Progress (§3.11) tables. Does not restate or summarize any archived document's content, and does not touch any `XP-NNNN` document or `README.md`. |
+| 0.4 | 2026-07-07 | Claude Code | Synchronization only, per a repository audit that found this roadmap out of date relative to `DOCUMENT-INDEX.md`: updated §2.2, §2.5, §2.6, §3.1, §3.4, and §3.11 to reflect that (a) the `modules/` and `digital-operating-systems/` folder READMEs identified as missing in v0.3 were added 2026-07-06, and (b) `XP-0000`–`XP-0008` and `XP-0026`–`XP-0030` advanced from `Draft` to `In Review` in `DOCUMENT-INDEX.md` on 2026-07-07. Phase 1's approval gate is unchanged — `Approved` remains the required end-state for all fourteen documents, and Phase 1 is recorded as still open ("In progress," not "Not started" or "Completed"). No roadmap sequencing, phase gate, dependency, or scope was altered; no `XP-NNNN` document, `DOCUMENT-INDEX.md`, or architecture content was touched by this revision. |

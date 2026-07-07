@@ -10,6 +10,42 @@ Format: newest entries first.
 
 ---
 
+## 2026-07-07 — Lifecycle Advancement Recorded: XP-0000–XP-0008 and XP-0026–XP-0030 Draft → In Review
+
+Records two related, previously unlogged changes, both governance-tracking
+only — no architecture, roadmap sequencing, dependency, numbering, or
+approval-gate change is made or implied by this entry:
+
+- **Lifecycle advancement (2026-07-07).** `XP-0000`–`XP-0008` (governance
+  series) and `XP-0026`–`XP-0030` (Module Foundation and Digital
+  Operating System Architecture) moved from `Draft` to `In Review` in
+  `DOCUMENT-INDEX.md`. For `XP-0000`–`XP-0008`, this was additionally
+  recorded in each document's own Document Metadata table (`Status`
+  field; `Last Updated` set to 2026-07-07). `XP-0026`–`XP-0030` follow
+  the Domain Architecture pattern (`XP-0010` §3–§4), which carries no
+  Document Metadata table by default and did not receive one here — for
+  these five, the status change is recorded in `DOCUMENT-INDEX.md` only.
+  None of the fourteen documents reached `Approved` — the Approval Gate
+  (`XP-0002`) and Phase 1's "advance to `Approved`" requirement
+  (`DOCUMENTATION-ROADMAP.md` §3.1) are both unaffected and remain in
+  force. This entry documents that advancement after the fact; it was not
+  previously recorded in this changelog.
+- **Downstream synchronization (2026-07-07).** `DOCUMENTATION-ROADMAP.md`
+  (§2.2, §2.5, §2.6, §3.1, §3.4, §3.11) and the `modules/` and
+  `digital-operating-systems/` folder `README.md` files were updated to
+  reflect the `In Review` status above, and to reflect that the two
+  folder READMEs `DOCUMENTATION-ROADMAP.md` §3.4 previously listed as
+  missing were added 2026-07-06 (see the entry below). This closes a
+  drift a repository audit identified between `DOCUMENT-INDEX.md` (the
+  authoritative source) and its three dependents, none of which had been
+  updated after the 2026-07-06 README additions or the 2026-07-07
+  lifecycle advancement.
+
+No `XP-NNNN` document's substantive content, no architecture, no
+governance rule, no roadmap phase or sequencing, and no numbering changed
+as part of this entry — only `Status`/`Last Updated` fields and the
+derivative folder-status text that restates them.
+
 ## 2026-07-06 — Repository Synchronization: Folder READMEs Added, Phantom Reference Corrected
 
 Closed a set of metadata-only gaps identified by a repository governance
