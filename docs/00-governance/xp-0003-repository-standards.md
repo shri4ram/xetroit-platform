@@ -15,6 +15,11 @@
 | **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0003 (self), XP-0004, XP-0010 — Documentation Writing Standard |
 
+**Frozen:** This document is `Approved` and **Frozen** as of 2026-07-08,
+per Founder decision, completing the Phase 1 Founder Freeze. Further
+changes require a new revision and a fresh approval cycle per
+`xp-0002-approval-workflow.md` — it is not edited casually while frozen.
+
 ---
 
 ## Purpose
@@ -159,3 +164,4 @@ None at this time.
 | 0.2 | 2026-07-04 | Claude Code | Recognized unnumbered top-level folders as an approved category for cross-cutting architecture spanning every Digital Operating System (`modules/`, and newly `digital-operating-systems/` for `XP-0030`), distinct from the two-digit numbered domain folders. No renumbering or reordering of existing numbered folders. |
 | 0.3 | 2026-07-06 | Claude Code | Closed a governance gap in Folder Structure Rules: added one generic rule stating that a non-authoritative Blueprint planning artifact (per `xp-0010-documentation-writing-standard.md` §3) is placed in a `blueprints/` subfolder of the existing top-level folder it informs, never as a new top-level folder and never inside one that does not already exist. Introduces no numbering scheme, names no specific Blueprint type, and does not redefine what a Blueprint is. No other top-level rule changed; no other document modified. |
 | 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. Approval Checklist fully satisfied. No content change. |
+| 1.0 | 2026-07-08 | Claude Code | Founder Freeze: marked **Frozen** alongside `Approved`, completing the review workflow (CTO → Founder Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final CTO Review → Governance Closeout → Freeze) as part of the Phase 1 Founder Freeze. No content change. |

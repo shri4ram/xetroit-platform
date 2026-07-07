@@ -2,7 +2,7 @@
 
 **Status:** Foundation Draft
 **Owner:** XETROIT Architecture Team
-**Last Updated:** 2026-07-07 (v0.5)
+**Last Updated:** 2026-07-08 (v0.6)
 
 ---
 
@@ -174,11 +174,13 @@ Where any of those disagree with this table, they win.
 - **Audience:** Business OS Domain Architecture authors and, once that is
   Approved, its constituent Module Architecture authors.
 - **Planned documents:** One Domain Architecture document ("Business OS"),
-  unnumbered pending the governance sequencing this roadmap defines in
-  Phase 2.
+  now authored as `XP-0031`, `Draft`.
 - **Dependencies:** `02-core-platform/`, `digital-operating-systems/`
   (`XP-0014` §8–9, `XP-0030`).
-- **Status:** Planned.
+- **Status:** In progress — `XP-0031 — Business Operating System Domain
+  Architecture` authored and registered `Draft` (2026-07-08), per
+  `DOCUMENT-INDEX.md`. Not yet `Approved`; its own future Module
+  Architecture documents remain unauthorized until it is.
 
 ### 2.8 `04-community-os/`
 
@@ -423,7 +425,7 @@ Where any of those disagree with this table, they win.
 |---|---|---|---|
 | 0 | Foundation | `00-company/`, `00-governance/`, `01-platform/`, `02-core-platform/`, `modules/`, `digital-operating-systems/` | None — already underway |
 | 1 | Foundation Closeout | Advance `00-governance/` (`XP-0000`–`XP-0008`) and `modules/`, `digital-operating-systems/` (`XP-0026`–`XP-0030`) from `Draft` to `Approved` (**complete**, 2026-07-07); add the two missing folder READMEs (§3.4, complete) | Phase 0 documents drafted (already true) — **gate satisfied** |
-| 2 | Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/` Domain Architecture documents; the Future Vertical OS shared-pattern Domain Architecture (§2.10 — folder not yet assigned) | Phase 1's `digital-operating-systems/` and `modules/` documents `Approved` (`XP-0014` §8, `XP-0030` Dependencies) |
+| 2 | Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/` Domain Architecture documents; the Future Vertical OS shared-pattern Domain Architecture (§2.10 — folder not yet assigned) | Phase 1's `digital-operating-systems/` and `modules/` documents `Approved` (`XP-0014` §8, `XP-0030` Dependencies) — **gate satisfied 2026-07-07; underway** (`XP-0031` for `03-business-os/` authored `Draft`, 2026-07-08) |
 | 3 | Shared Ecosystem Capabilities | `06-marketplace/`, `07-payments/`, `08-ai/` — classified per `XP-0027` before authoring | Relevant Phase 2 Domain Architecture(s) `Approved`, or classified as Shared Ecosystem Service against `02-core-platform/` directly |
 | 4 | Client & Platform Standards | `09-mobile/`, `12-ui-ux/`, `13-api/` | Phase 2/3 domains it serves are `Approved` enough to have stable contracts to document against |
 | 5 | Operational Standards | `10-devops/`, `11-security/`, `14-database/`, `15-development/` | Can proceed in parallel with Phase 3–4 once `02-core-platform/` is `Approved`; not blocked on Digital Operating System content |
@@ -565,7 +567,7 @@ in `xp-0000-documentation-governance.md` and used in `DOCUMENT-INDEX.md`.
 |---|---|---|
 | 0 — Foundation | `00-company/`, `00-governance/`, `01-platform/`, `02-core-platform/`, `modules/`, `digital-operating-systems/` | Documents authored; both folder READMEs added (§3.4, complete); `00-governance/` and the `modules/`/`digital-operating-systems/` series are `Approved` |
 | 1 — Foundation Closeout | (same folders, README + lifecycle gaps) | **Complete** (2026-07-07) — folder READMEs complete; all fourteen documents `Approved`; Freeze not yet performed (separate step) |
-| 2 — Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/`, Future Vertical OS (folder TBD, §2.10) | Planned |
+| 2 — Digital Operating Systems | `03-business-os/`, `04-community-os/`, `05-life-os/`, Future Vertical OS (folder TBD, §2.10) | In progress — `03-business-os/` has `XP-0031` `Draft` (2026-07-08); `04-community-os/`, `05-life-os/`, Future Vertical OS remain Planned |
 | 3 — Shared Ecosystem Capabilities | `06-marketplace/`, `07-payments/`, `08-ai/` | Planned |
 | 4 — Client & Platform Standards | `09-mobile/`, `12-ui-ux/`, `13-api/` | Future |
 | 5 — Operational Standards | `10-devops/`, `11-security/`, `14-database/`, `15-development/` | Future |
@@ -587,3 +589,4 @@ remains the sole authoritative source for any individual document's status.
 | 0.3 | 2026-07-05 | Claude Code | Added the missing `archive/` folder entry (§2.23), listed in `README.md` §7 but previously uncovered — Purpose, Scope, Audience, Planned Documents, Dependencies, and Status, treated strictly as historical/reference with no execution phase of its own; added corresponding rows to the Documentation Phases (§3.1) and Overall Documentation Progress (§3.11) tables. Does not restate or summarize any archived document's content, and does not touch any `XP-NNNN` document or `README.md`. |
 | 0.4 | 2026-07-07 | Claude Code | Synchronization only, per a repository audit that found this roadmap out of date relative to `DOCUMENT-INDEX.md`: updated §2.2, §2.5, §2.6, §3.1, §3.4, and §3.11 to reflect that (a) the `modules/` and `digital-operating-systems/` folder READMEs identified as missing in v0.3 were added 2026-07-06, and (b) `XP-0000`–`XP-0008` and `XP-0026`–`XP-0030` advanced from `Draft` to `In Review` in `DOCUMENT-INDEX.md` on 2026-07-07. Phase 1's approval gate is unchanged — `Approved` remains the required end-state for all fourteen documents, and Phase 1 is recorded as still open ("In progress," not "Not started" or "Completed"). No roadmap sequencing, phase gate, dependency, or scope was altered; no `XP-NNNN` document, `DOCUMENT-INDEX.md`, or architecture content was touched by this revision. |
 | 0.5 | 2026-07-07 | Claude Code | Synchronization only, following the Founder's approval of all fourteen Phase 1 documents: updated §2.2, §2.5, §2.6, §3.1, §3.4, and §3.11 to record Phase 1 ("Foundation Closeout") as **complete** and its gate as satisfied, matching `DOCUMENT-INDEX.md`'s `Approved` status for `XP-0000`–`XP-0008` and `XP-0026`–`XP-0030`. Explicitly notes Freeze has not been performed for any of the fourteen and remains a separate step. No roadmap sequencing, dependency graph, or scope was altered; this revision only reflects a status this roadmap already gated on, now met. |
+| 0.6 | 2026-07-08 | Claude Code | Synchronization only, following the authoring of `XP-0031 — Business Operating System Domain Architecture`, `Draft`: updated §2.7, §3.1, and §3.11 to record `03-business-os/` and Phase 2 ("Digital Operating Systems") as **in progress**, no longer `Planned`. No roadmap sequencing, dependency graph, gate, or scope was altered — Phase 2's gate was already satisfied by Phase 1's completion (2026-07-07); this revision only reflects that Phase 2 work has now begun. |

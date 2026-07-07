@@ -15,6 +15,11 @@
 | **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0002, XP-0004 |
 
+**Frozen:** This document is `Approved` and **Frozen** as of 2026-07-08,
+per Founder decision, completing the Phase 1 Founder Freeze. Further
+changes require a new revision and a fresh approval cycle per
+`xp-0002-approval-workflow.md` — it is not edited casually while frozen.
+
 ---
 
 ## Purpose
@@ -205,3 +210,4 @@ step 3) but the sequence itself is never bypassed.
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: roles, responsibilities, approval authority matrix, AI engineering workflow. |
 | 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. The remaining Open Question (Codex blocking authority) was assessed as non-blocking and Founder-confirmed; Approval Checklist fully satisfied. No content in Sections 1–17 changed. |
+| 1.0 | 2026-07-08 | Claude Code | Founder Freeze: marked **Frozen** alongside `Approved`, completing the review workflow (CTO → Founder Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final CTO Review → Governance Closeout → Freeze) as part of the Phase 1 Founder Freeze. No content change. |

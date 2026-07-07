@@ -1,7 +1,7 @@
 # Document Index
 
 **Status:** Foundation Draft
-**Last Updated:** 2026-07-07
+**Last Updated:** 2026-07-08
 
 This is the master index of all official XETROIT Platform documents. Every
 document must be registered here at the moment it is identified as needed
@@ -27,6 +27,26 @@ there — see that document before assuming it means `Draft`).
 repository-bootstrap marker, not a lifecycle status. See
 `00-governance/xp-0000-documentation-governance.md` for its exact
 definition.
+
+> **Phase 2 Begins — XP-0031 Drafted** (2026-07-08): `XP-0031 — Business
+> Operating System Domain Architecture` is authored and registered as
+> `Draft`, Owner Founder, folder `03-business-os/`. It follows the Domain
+> Architecture pattern established by `XP-0015` and followed by
+> `XP-0026`–`XP-0030` (no Document Metadata table or Revision History of
+> its own; governance tracked here and in its own closing Architecture
+> Governance section). It applies the constitutional contract `XP-0030`
+> establishes for every Digital Operating System specifically to Business
+> OS — the domain of running a business, per `XP-0011` — without
+> designing any capability, workflow, API, user interface, database,
+> implementation, or deployment detail; Module identification is
+> explicitly deferred to Business OS's own future Module Architecture
+> documents. It does not modify the Platform Constitution, `XP-0014`, the
+> Core Platform Domain Architecture, the Module Foundation, or `XP-0030`.
+> This is the first Phase 2 ("Digital Operating Systems") document; Phase
+> 1's gate (all fourteen Phase 1 documents `Approved`) was already
+> satisfied 2026-07-07 and Frozen 2026-07-08. `CHANGELOG.md`,
+> `docs/03-business-os/README.md`, and `docs/DOCUMENTATION-ROADMAP.md`
+> record the same milestone.
 
 ## Registered Documents
 
@@ -63,6 +83,37 @@ definition.
 | XP-0028 | Module Composition Principles | modules/ | Approved | Founder |
 | XP-0029 | Module Lifecycle | modules/ | Approved | Founder |
 | XP-0030 | Digital Operating System Architecture | digital-operating-systems/ | Approved | Founder |
+| XP-0031 | Business Operating System Domain Architecture | 03-business-os/ | Draft | Founder |
+
+> **Phase 1 Founder Freeze Complete — XP-0000–XP-0008 and XP-0026–XP-0030
+> Frozen** (2026-07-08): Per explicit Founder decision, all fourteen
+> Phase 1 documents — already `Approved` per the Phase 1 Foundation
+> Closeout below — are now also **Frozen**, completing the standard
+> review workflow (CTO → Founder Review → Claude → CTO Review → Codex →
+> CTO Review → Claude Fixes → Final CTO Review → Governance Closeout →
+> **Freeze**) for all fourteen. Every Codex finding against each document
+> was already resolved (fixed, or explicitly deferred with Founder
+> reasoning) as part of reaching `Approved`; each document's Approval
+> Checklist (`XP-0000`–`XP-0008`) or Architecture Governance section
+> (`XP-0026`–`XP-0030`) was confirmed fully satisfied before this Freeze
+> was recorded, and the prior `Approved` state was already captured in a
+> manual git commit before this step began. For `XP-0000`–`XP-0008`, each
+> document's own Document Metadata table gained a `**Frozen:**` notice
+> beneath it (Version remains `1.0`; Freeze is not a content revision),
+> with a corresponding new Revision History row dated 2026-07-08.
+> `XP-0026`–`XP-0030` follow the Domain Architecture pattern and carry no
+> Document Metadata table of their own; each instead gained a closing
+> `**Governance Closeout (2026-07-08)**` note appended to its existing
+> Architecture Governance section. This table's `Status` column continues
+> to read `Approved` for all fourteen rows — consistent with the existing
+> `XP-0014`/`XP-0015` convention, where `Frozen` is recorded as an
+> additional marker in the document itself and in this callout, never as
+> a replacement value in this table's Status Legend, which does not
+> define a `Frozen` state. No architectural content, governance rule, or
+> `XP-NNNN` number was altered by this Freeze — only the governance
+> bookkeeping (Frozen notices and Revision History / Architecture
+> Governance entries) each document's own convention already calls for.
+> `CHANGELOG.md` records the same milestone.
 
 > **Phase 1 Foundation Closeout Complete — XP-0000–XP-0008 and
 > XP-0026–XP-0030 Approved** (2026-07-07): Per Founder decision, all
@@ -342,7 +393,7 @@ platform/module content — so this deferral still holds.)
 | ~~Platform Architecture~~ (conceptual) | 01-platform/ | Superseded by XP-0012 | — |
 | Platform Architecture (technology-specific) | 01-platform/ | Planned | Unassigned |
 | ~~Core Platform Architecture~~ | 02-core-platform/ | Superseded by XP-0015 | — |
-| Business OS | 03-business-os/ | Planned | Unassigned |
+| ~~Business OS~~ | 03-business-os/ | Superseded by XP-0031 | — |
 | Community OS | 04-community-os/ | Planned | Unassigned |
 | Life OS | 05-life-os/ | Planned | Unassigned |
 | Marketplace | 06-marketplace/ | Planned | Unassigned |

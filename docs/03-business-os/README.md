@@ -64,11 +64,15 @@ No other folder in the approved roadmap lists a dependency on this one.
 # Candidate Documents
 
 - **Business OS Domain Architecture** — the single document satisfying
-  `XP-0030`'s contract for Business OS, anticipated by `XP-0014` §9.
+  `XP-0030`'s contract for Business OS, anticipated by `XP-0014` §9. Now
+  authored as `XP-0031` (see Current Status).
 
 # Current Status
 
-`docs/03-business-os/` currently contains no authored Business OS
-documentation. Its planned Domain Architecture document remains
-unnumbered and unassigned, per the "Numbering Collision — Resolved"
-section of `DOCUMENT-INDEX.md`.
+`docs/03-business-os/` now contains `XP-0031 — Business Operating System
+Domain Architecture`, registered in `DOCUMENT-INDEX.md` as `Draft`, Owner
+Founder. It applies `XP-0030`'s constitutional contract to Business OS
+and identifies no specific Module, capability, workflow, or
+implementation detail — those remain deferred to Business OS's own
+future Module Architecture, Feature Specification, and Implementation
+Plan documents, once `XP-0031` itself reaches `Approved`.

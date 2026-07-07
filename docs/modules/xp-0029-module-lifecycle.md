@@ -252,3 +252,9 @@ Review, Claude, CTO Review, Codex, CTO Review, Claude Fixes, Final CTO
 Review, Governance Closeout, Freeze — and does not become authoritative
 until it completes that process and is registered `Approved` in
 `DOCUMENT-INDEX.md`.
+
+**Governance Closeout (2026-07-08):** Having reached `Approved` as part
+of the Phase 1 Foundation Closeout (2026-07-07), this document is now
+**Frozen** as of 2026-07-08, per Founder decision, completing the review
+workflow above as part of the Phase 1 Founder Freeze. Further change
+requires a new revision and a fresh review cycle, per `XP-0002`.

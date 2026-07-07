@@ -10,6 +10,89 @@ Format: newest entries first.
 
 ---
 
+## 2026-07-08 — XP-0031: Business Operating System Domain Architecture (Phase 2 Begins)
+
+Added `XP-0031 — Business Operating System Domain Architecture`
+(`03-business-os/xp-0031-business-os-domain-architecture.md`), the first
+Phase 2 ("Digital Operating Systems") document and the first Domain
+Architecture document for a Digital Operating System instance, following
+`XP-0015`'s precedent for Core Platform. It applies the constitutional
+contract `XP-0030 — Digital Operating System Architecture` establishes
+for every Digital Operating System specifically to Business OS — the
+domain `XP-0011` already names as "the operational work an organization
+does to function and grow."
+
+- Follows the Domain Architecture pattern (`XP-0010` §3): no Document
+  Metadata table or Revision History of its own; opens with Purpose and
+  closes with Architecture Governance.
+- Defines purpose, architectural scope, responsibilities,
+  non-responsibilities, relationships to Users, the Core Platform, Shared
+  Ecosystem Services, Infrastructure, and other Digital Operating
+  Systems, Module composition intent, downstream documents enabled,
+  risks, and governance — applying `XP-0030` to Business OS, never
+  restating or redefining it.
+- Introduces no capability, workflow, API, user interface, database,
+  implementation, or deployment detail. Module identification is
+  explicitly deferred to Business OS's own future Module Architecture
+  documents, once this document itself reaches `Approved`.
+- Does not modify the Platform Constitution, `XP-0014`, the Core Platform
+  Domain Architecture (`XP-0015`–`XP-0025`), the Module Foundation
+  (`XP-0026`–`XP-0029`), or `XP-0030`.
+- Registered `XP-0031` in `DOCUMENT-INDEX.md` as `Draft`, Owner: Founder,
+  folder `03-business-os/`.
+- Updated `docs/03-business-os/README.md`'s Candidate Documents and
+  Current Status to reflect that the folder's Domain Architecture
+  document is now authored.
+- Updated `docs/DOCUMENTATION-ROADMAP.md` (v0.5 → v0.6): §2.7, §3.1, and
+  §3.11 now record `03-business-os/` and Phase 2 as in progress rather
+  than `Planned`. No roadmap sequencing, dependency graph, or gate was
+  altered — Phase 2's gate was already satisfied by Phase 1's completion
+  (2026-07-07); this only reflects that Phase 2 work has begun.
+
+## 2026-07-08 — Phase 1 Founder Freeze: XP-0000–XP-0008 and XP-0026–XP-0030 Frozen
+
+Per explicit Founder decision, all fourteen Phase 1 documents — already
+`Approved` per the Phase 1 Foundation Closeout below — are now also
+**Frozen**, completing the standard review workflow (CTO → Founder
+Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final
+CTO Review → Governance Closeout → **Freeze**) for all fourteen.
+
+Pre-checks confirmed before this step: each document's `Approved` status
+was already recorded by the Founder in both its own metadata (or, for
+the Domain Architecture pattern, `DOCUMENT-INDEX.md`/its folder
+`README.md`) and `DOCUMENT-INDEX.md`; every Codex finding against each
+was already resolved as part of reaching `Approved`; each document's
+Approval Checklist (`XP-0000`–`XP-0008`) or Architecture Governance
+section (`XP-0026`–`XP-0030`) was fully satisfied; and the prior
+`Approved` state was already captured in a manual git commit.
+
+- **Governance series (`XP-0000`–`XP-0008`).** Each document's own
+  Document Metadata table gained a `**Frozen:**` notice beneath it
+  (Version remains `1.0` — Freeze is not a content revision), with a
+  corresponding new Revision History row dated 2026-07-08 recording the
+  completed review chain.
+- **Module Foundation and Digital Operating System Architecture
+  (`XP-0026`–`XP-0030`).** These follow the Domain Architecture pattern
+  and carry no Document Metadata table or Revision History of their own;
+  each instead gained a closing `**Governance Closeout (2026-07-08)**`
+  note appended to its existing Architecture Governance section, marking
+  it `Frozen` alongside `Approved`.
+- **`DOCUMENT-INDEX.md`** updated: `Last Updated` set to 2026-07-08, and
+  a new Phase 1 Founder Freeze callout added above the existing Phase 1
+  Foundation Closeout callout. The Registered Documents table's `Status`
+  column continues to read `Approved` for all fourteen rows — consistent
+  with the existing `XP-0014`/`XP-0015` convention, where `Frozen` is an
+  additional marker recorded in the document itself and in callout text,
+  never a replacement value in the Status Legend, which does not define
+  a `Frozen` state.
+
+No architectural content, business rule, technical rule, or governance
+rule in any of the fourteen documents was altered by this Freeze — only
+the governance bookkeeping (Frozen notices and Revision History /
+Architecture Governance entries) each document's own convention already
+calls for. No document numbering changed, and no new document was
+created.
+
 ## 2026-07-07 — Phase 1 Foundation Closeout: XP-0000–XP-0008 and XP-0026–XP-0030 Approved
 
 Per explicit Founder decision, all fourteen Phase 1 documents moved from

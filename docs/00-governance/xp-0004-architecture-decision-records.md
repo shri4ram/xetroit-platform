@@ -15,6 +15,11 @@
 | **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0001, XP-0002, XP-0003 |
 
+**Frozen:** This document is `Approved` and **Frozen** as of 2026-07-08,
+per Founder decision, completing the Phase 1 Founder Freeze. Further
+changes require a new revision and a fresh approval cycle per
+`xp-0002-approval-workflow.md` — it is not edited casually while frozen.
+
 ---
 
 ## Purpose
@@ -172,3 +177,4 @@ None at this time.
 |---|---|---|---|
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: ADR numbering, status values, template, and review requirements. |
 | 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. Approval Checklist fully satisfied. No content change. |
+| 1.0 | 2026-07-08 | Claude Code | Founder Freeze: marked **Frozen** alongside `Approved`, completing the review workflow (CTO → Founder Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final CTO Review → Governance Closeout → Freeze) as part of the Phase 1 Founder Freeze. No content change. |

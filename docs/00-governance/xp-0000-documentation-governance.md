@@ -15,6 +15,11 @@
 | **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0001, XP-0002, XP-0003, XP-0004 |
 
+**Frozen:** This document is `Approved` and **Frozen** as of 2026-07-08,
+per Founder decision, completing the Phase 1 Founder Freeze. Further
+changes require a new revision and a fresh approval cycle per
+`xp-0002-approval-workflow.md` — it is not edited casually while frozen.
+
 ---
 
 ## Purpose
@@ -200,3 +205,4 @@ Rules:
 | 0.1 | 2026-07-02 | Claude Code | Initial governance concepts embedded in `docs/README.md` (pre-formalization). |
 | 0.2 | 2026-07-02 | Claude Code | Formalized as XP-0000 in `00-governance/`; added explicit "Foundation Draft" bootstrap-state definition; documented numbering-collision resolution rule. |
 | 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. The remaining Open Question (Foundation Draft retirement) was assessed as non-blocking and Founder-confirmed; Approval Checklist fully satisfied. No content in Sections 1–17 changed. |
+| 1.0 | 2026-07-08 | Claude Code | Founder Freeze: marked **Frozen** alongside `Approved`, completing the review workflow (CTO → Founder Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final CTO Review → Governance Closeout → Freeze) as part of the Phase 1 Founder Freeze. No content change. |

@@ -15,6 +15,12 @@
 | **Last Updated** | 2026-07-07 |
 | **Related Documents** | XP-0000, XP-0001, XP-0004, XP-0010 |
 
+**Frozen:** This document is `Approved` and **Frozen** as of 2026-07-08,
+per Founder decision, completing the Phase 1 Founder Freeze. Further
+changes require a new revision and a fresh approval cycle per this
+document's own Status Transition Steps — it is not edited casually while
+frozen.
+
 ---
 
 ## Purpose
@@ -150,3 +156,4 @@ None at this time.
 | 0.1 | 2026-07-02 | Claude Code | Initial draft: status transition table, Approval Gate, Codex finding resolution rule. |
 | 0.2 | 2026-07-07 | Claude Code | Founder-approved amendment: Step 6's precondition now reads "every requirement `xp-0010-documentation-writing-standard.md` defines for reaching `Approved` is satisfied," replacing the prior unconditional "Approval Checklist fully satisfied" — resolving a conflict between this document's previously pattern-unaware scope and `XP-0010` §17's existing "where the specification pattern is used" qualifier. Added a clarifying sentence after the Status Transition Steps table stating that this document does not define, enumerate, or presume any document's structural pattern, required sections, or checklist. Added `XP-0010` as a Dependency and to Related Documents. No change to the Approval Gate, lifecycle statuses, Founder-only approval authority, the Codex-findings-resolution requirement, status transitions, or Scope. |
 | 1.0 | 2026-07-07 | Claude Code | Founder-approved: Status `In Review` → `Approved` as part of the Phase 1 Foundation Closeout. Approval Checklist fully satisfied. No content in Purpose through AI Agent Notes changed. |
+| 1.0 | 2026-07-08 | Claude Code | Founder Freeze: marked **Frozen** alongside `Approved`, completing the review workflow (CTO → Founder Review → Claude → CTO Review → Codex → CTO Review → Claude Fixes → Final CTO Review → Governance Closeout → Freeze) as part of the Phase 1 Founder Freeze. No content change. |
